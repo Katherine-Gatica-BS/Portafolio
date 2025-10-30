@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio - Ingeniera en Informática</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark">
+
+<!-- Loader -->
+<div id="loader">
+    <div class="loader-content">
+        <div class="spinner"></div>
+        <p>Cargando...</p>
+    </div>
+</div>
+
+<!-- Header -->
+<header>
+    <div class="logo">Katherine Gatica</div>
+
+    <div class="nav-cards">
+        <a href="#home" class="nav-card">Inicio</a>
+        <a href="#about" class="nav-card">Sobre mí</a>
+        <a href="#projects" class="nav-card">Proyectos</a>
+        <a href="#contact" class="nav-card">Contacto</a>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="nav-cards responsive" id="responsive-menu">
+        <a href="#home" class="nav-card">Inicio</a>
+        <a href="#about" class="nav-card">Sobre mí</a>
+        <a href="#projects" class="nav-card">Proyectos</a>
+        <a href="#contact" class="nav-card">Contacto</a>
+        <select id="language-select-responsive" class="responsive">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="pt">PT</option>
+        </select>
+        <button id="theme-toggle-responsive">Modo Claro</button>
+    </div>
+
+    <div class="header-right">
+        <select id="language-select">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="pt">PT</option>
+        </select>
+        <button id="theme-toggle">Modo Claro</button>
+    </div>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="section">
+    <div class="particles-container" id="particles-js"></div>
+    <div class="hero">
+        <h1>Ingeniera en Informática</h1>
+        <p>Data Science | Data Analysis | Data Engineering</p>
+        <p>Transformando datos en decisiones estratégicas.</p>
+        <a href="#about" class="btn">Ver más</a>
+    </div>
+</section>
+
+<!-- Contenedor general para partículas laterales -->
+<div id="side-particles-container">
+
+    <div class="particles-container side" id="side-particles-left"></div>
+    <div class="particles-container side" id="side-particles-right"></div>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>Sobre mí</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="justificado">
+                Ingeniera en Informática con especialización en Ciencia de Datos, enfocada en convertir información en valor estratégico para la toma de decisiones. Cuento con formación y experiencia práctica en análisis de datos, automatización de procesos y desarrollo de soluciones tecnológicas. Me caracterizo por mi pensamiento analítico, iniciativa y compromiso con los resultados. Busco contribuir en equipos donde la tecnología y la eficiencia impulsen un cambio real.</p>
+
+                <!-- Habilidades técnicas con tabs -->
+                <h3>Habilidades Técnicas</h3>
+                <div class="tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="lenguajes">Lenguajes</button>
+                        <button class="tab-btn" data-tab="bi">Herramientas BI</button>
+                        <button class="tab-btn" data-tab="ml">Machine Learning</button>
+                        <button class="tab-btn" data-tab="cloud">Cloud & Big Data</button>
+                    </div>
+                    <div class="tab-contents">
+                        <div class="tab-content active" id="lenguajes">
+                            <ul>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>R</li>
+                                <li>Java</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="bi">
+                            <ul>
+                                <li>Power BI</li>
+                                <li>Tableau</li>
+                                <li>Excel avanzado</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="ml">
+                            <ul>
+                                <li>TensorFlow</li>
+                                <li>Scikit-learn</li>
+                                <li>Modelos de regresión y clasificación</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="cloud">
+                            <ul>
+                                <li>AWS</li>
+                                <li>Azure</li>
+                                <li>Hadoop</li>
+                                <li>Spark</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Resolución de problemas</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicación</li>
+                    <li>Aprendizaje continuo</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="images/Avatar.png" alt="Foto de perfil" class="avatar">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Análisis de Ventas con ML</h3>
+                <p>Predicción de ventas usando regresión. Tecnologías: Python, Pandas, Scikit-learn.</p>
+                <a href="https://github.com/tuusuario/proyecto1" class="btn">GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Dashboard en Power BI</h3>
+                <p>Visualización de KPIs. Tecnologías: Power BI, SQL.</p>
+                <a href="https://github.com/tuusuario/proyecto2" class="btn">GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Pipeline en AWS</h3>
+                <p>ETL para big data. Tecnologías: AWS Glue, S3.</p>
+                <a href="https://github.com/tuusuario/proyecto3" class="btn">GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Modelo de Recomendación</h3>
+                <p>Sistema colaborativo. Tecnologías: TensorFlow, Python.</p>
+                <a href="https://github.com/tuusuario/proyecto4" class="btn">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contacto</h2>
+        <form id="contact-form" action="https://formspree.io/f/xrboabzd" method="POST">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/tuusuario">LinkedIn</a>
+            <a href="https://github.com/tuusuario">GitHub</a>
+        </div>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
