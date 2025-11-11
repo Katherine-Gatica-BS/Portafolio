@@ -57,25 +57,35 @@
 
         <div class="carousel-viewport">
           <div class="carousel-track" role="list">
+
             <figure class="carousel-item" role="listitem">
-              <img src="../../images/g1.png" alt="Gráfico 1 — descripción breve">
-              <figcaption class="carousel-caption">Gráfico 1 — resumen/nota</figcaption>
+              <img src="../../images/g1.png" alt="Gráfico 1 — distribución del gasto por género">
+              <figcaption class="carousel-caption" style="text-align:justify;">
+                El gráfico muestra la distribución del gasto según género. Se observa que los hombres registran un gasto más alto y frecuente, manteniendo la tendencia general del dataset, donde el público masculino representa la mayor actividad de compra.
+              </figcaption>
             </figure>
 
             <figure class="carousel-item" role="listitem">
-              <img src="../../images/g2.png" alt="Gráfico 2 — descripción breve">
-              <figcaption class="carousel-caption">Gráfico 2 — resumen/nota</figcaption>
+              <img src="../../images/g2.png" alt="Gráfico 2 — codo para KMeans">
+              <figcaption class="carousel-caption" style="text-align:justify;">
+                El gráfico del codo muestra cómo varía la inercia (distorsión) al aumentar el número de clusters. El punto donde la curva deja de disminuir de forma significativa indica el número óptimo de grupos. Aunque el codo sugiere <strong>4 clusters</strong>, el Silhouette Score recomendó <strong>2 clusters</strong>, por lo que se eligió un valor intermedio (<strong>3 clusters</strong>) para equilibrar separación y coherencia.
+              </figcaption>
             </figure>
 
             <figure class="carousel-item" role="listitem">
-              <img src="../../images/g3.png" alt="Gráfico 3 — descripción breve">
-              <figcaption class="carousel-caption">Gráfico 3 — resumen/nota</figcaption>
+              <img src="../../images/g3.png" alt="Gráfico 3 — gasto promedio por cluster">
+              <figcaption class="carousel-caption" style="text-align:justify;">
+                El gráfico muestra el gasto promedio en USD por cluster. Cada cluster representa un grupo de clientes con patrones de compra similares. La barra más alta identifica al segmento que realiza los mayores gastos promedio, señalando a los clientes de mayor valor para la empresa.
+              </figcaption>
             </figure>
 
             <figure class="carousel-item" role="listitem">
-              <img src="../../images/g4.png" alt="Gráfico 4 — descripción breve">
-              <figcaption class="carousel-caption">Gráfico 4 — resumen/nota</figcaption>
+              <img src="../../images/g4.png" alt="Gráfico 4 — pairplot de variables por cluster">
+              <figcaption class="carousel-caption" style="text-align:justify;">
+                El pairplot muestra las relaciones entre variables dentro de cada cluster. Se identifican tres perfiles claros:<p>*</p><p> <strong>Cluster 0</strong>, con mayor gasto y compras previas .<p><strong>Cluster 1</strong>, con montos bajos y menor actividad.</p> <p> <strong>Cluster 2</strong>, con comportamiento intermedio (gastos medios-altos y edades variadas).</p><p>*</p><p> Las distribuciones diagonales y las tendencias observadas respaldan la validez de la segmentación.</p>
+              </figcaption>
             </figure>
+
           </div>
         </div>
 
