@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portafolio - Ingeniera en Informática</title>
+<title data-i18n="title">Portafolio - Ingeniera en Informática</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -15,39 +15,55 @@
 <div id="loader">
     <div class="loader-content">
         <div class="spinner"></div>
-        <p>Cargando...</p>
+        <p data-i18n="loading">Cargando...</p>
+    </div>
+</div>
+
+<!-- POPUP DE PROXIMAMENTE -->
+<div class="popup-overlay" style="display:none;">
+    <div class="popup-content">
+      <h2 class="popup-title" data-i18n="popupTitle">¡Gracias por tu interés!</h2>
+
+      <p class="popup-text" data-i18n="popupDesc">
+        Este mini proyecto aún no está disponible.  
+        Pronto estaré subiendo novedades 🌟
+      </p>
+
+      <img src="images/popup.png" alt="Pingüino navideño" class="popup-image">
+
+      <button class="popup-close" data-i18n="closeBtn">Cerrar</button>
     </div>
 </div>
 
 <!-- Header -->
 <header>
-    <div class="logo">Katherine Gatica</div>
+    <div class="logo" data-i18n="logo">Katherine Gatica</div>
 
     <div class="nav-cards">
-        <a href="#home" class="nav-card">Inicio</a>
-        <a href="#about" class="nav-card">Sobre mí</a>
-        <a href="#projects" class="nav-card">Proyectos</a>
-        <a href="#contact" class="nav-card">Contacto</a>
+        <a href="#home" class="nav-card" data-i18n="navHome">Inicio</a>
+        <a href="#about" class="nav-card" data-i18n="navAbout">Sobre mí</a>
+        <a href="#projects" class="nav-card" data-i18n="navProjects">Proyectos</a>
+        <a href="#contact" class="nav-card" data-i18n="navContact">Contacto</a>
     </div>
 
     <div class="hamburger" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div></div><div></div><div></div>
     </div>
 
     <div class="nav-cards responsive" id="responsive-menu">
-        <a href="#home" class="nav-card">Inicio</a>
-        <a href="#about" class="nav-card">Sobre mí</a>
-        <a href="#projects" class="nav-card">Proyectos</a>
-        <a href="#contact" class="nav-card">Contacto</a>
+        <a href="#home" class="nav-card" data-i18n="navHome">Inicio</a>
+        <a href="#about" class="nav-card" data-i18n="navAbout">Sobre mí</a>
+        <a href="#projects" class="nav-card" data-i18n="navProjects">Proyectos</a>
+        <a href="#contact" class="nav-card" data-i18n="navContact">Contacto</a>
+
         <select id="language-select-responsive" class="responsive">
             <option value="es">ES</option>
             <option value="en">EN</option>
             <option value="de">DE</option>
             <option value="pt">PT</option>
         </select>
-        <button id="theme-toggle-responsive">Modo Claro</button>
+
+        <button id="theme-toggle-responsive" data-i18n="lightMode">Modo Claro</button>
     </div>
 
     <div class="header-right">
@@ -57,7 +73,7 @@
             <option value="de">DE</option>
             <option value="pt">PT</option>
         </select>
-        <button id="theme-toggle">Modo Claro</button>
+        <button id="theme-toggle" data-i18n="lightMode">Modo Claro</button>
     </div>
 </header>
 
@@ -65,129 +81,119 @@
 <section id="home" class="section">
     <div class="particles-container" id="particles-js"></div>
     <div class="hero">
-        <h1>Ingeniera en Informática</h1>
-        <p>Data Science | Data Analysis | Data Engineering</p>
-        <p>Transformando datos en decisiones estratégicas.</p>
-        <a href="#about" class="btn">Ver más</a>
+        <h1 data-i18n="heroTitle">Ingeniera en Informática</h1>
+        <p data-i18n="heroSub1">Data Science | Data Analysis | Data Engineering</p>
+        <p data-i18n="heroSub2">Transformando datos en decisiones estratégicas.</p>
+        <a href="#about" class="btn" data-i18n="seeMore">Ver más</a>
     </div>
 </section>
 
-<!-- Contenedor general para partículas laterales -->
+<!-- Contenedor general -->
 <div id="side-particles-container">
 
     <div class="particles-container side" id="side-particles-left"></div>
     <div class="particles-container side" id="side-particles-right"></div>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="section">
-        <h2>Sobre mí</h2>
+        <h2 data-i18n="aboutTitle">Sobre mí</h2>
+        <p class="justificado" data-i18n="aboutDesc">
+            Ingeniera en Informática con especialización en Ciencia de Datos, enfocada en convertir información en valor estratégico para la toma de decisiones. Cuento con formación y experiencia práctica en análisis de datos, automatización de procesos y desarrollo de soluciones tecnológicas. Me caracterizo por mi pensamiento analítico, iniciativa y compromiso con los resultados. Busco contribuir en equipos donde la tecnología y la eficiencia impulsen un cambio real.
+        </p>
         <div class="about-content">
-            <div class="about-text">
-                <p class="justificado">
-                Ingeniera en Informática con especialización en Ciencia de Datos, enfocada en convertir información en valor estratégico para la toma de decisiones. Cuento con formación y experiencia práctica en análisis de datos, automatización de procesos y desarrollo de soluciones tecnológicas. Me caracterizo por mi pensamiento analítico, iniciativa y compromiso con los resultados. Busco contribuir en equipos donde la tecnología y la eficiencia impulsen un cambio real.</p>
 
-                <!-- Habilidades técnicas con tabs -->
-                <h3>Habilidades Técnicas</h3>
+            <div class="about-text">
+
+                <h3 data-i18n="techSkills">Habilidades Técnicas</h3>
+
                 <div class="tabs">
                     <div class="tab-buttons">
-                        <button class="tab-btn active" data-tab="lenguajes">Lenguajes</button>
-                        <button class="tab-btn" data-tab="bi">Herramientas BI</button>
-                        <button class="tab-btn" data-tab="ml">Machine Learning</button>
-                        <button class="tab-btn" data-tab="cloud">Cloud & Big Data</button>
+                        <button class="tab-btn active" data-tab="lenguajes" data-i18n="tabLanguages">Lenguajes</button>
+                        <button class="tab-btn" data-tab="bi" data-i18n="tabBI">Herramientas BI</button>
+                        <button class="tab-btn" data-tab="ml" data-i18n="tabML">Machine Learning</button>
+                        <button class="tab-btn" data-tab="cloud" data-i18n="tabCloud">Cloud & Big Data</button>
                     </div>
+
                     <div class="tab-contents">
                         <div class="tab-content active" id="lenguajes">
-                            <ul>
-                                <li>Python</li>
-                                <li>SQL</li>
-                                <li>R</li>
-                                <li>JavaScript</li>
-                                <li>PHP</li>
-                            </ul>
+                            <ul><li>Python</li><li>SQL</li><li>R</li><li>JavaScript</li><li>PHP</li></ul>
                         </div>
                         <div class="tab-content" id="bi">
-                            <ul>
-                                <li>Power BI</li>
-                                <li>Looker Studio</li>
-                                <li>Excel</li>
-                            </ul>
+                            <ul><li>Power BI</li><li>Looker Studio</li><li>Excel</li></ul>
                         </div>
                         <div class="tab-content" id="ml">
-                            <ul>
-                                <li>TensorFlow</li>
-                                <li>Scikit-learn</li>
-                                <li>Machine Learning</li>
-                                <li>Deep Learning</li>
-                            </ul>
+                            <ul><li>TensorFlow</li><li>Scikit-learn</li><li>Machine Learning</li><li>Deep Learning</li></ul>
                         </div>
                         <div class="tab-content" id="cloud">
-                            <ul>
-                                <li>AWS</li>
-                                <!--<li>Azure</li>-->
-                                <li>Hadoop</li>
-                                <li>Spark</li>
-                            </ul>
+                            <ul><li>AWS</li><li>Hadoop</li><li>Spark</li></ul>
                         </div>
                     </div>
                 </div>
 
-                <h3>Soft Skills</h3>
+                <h3 data-i18n="softSkills">Soft Skills</h3>
                 <ul>
-                    <li>Resolución de problemas</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Comunicación</li>
-                    <li>Aprendizaje continuo</li>
+                    <li data-i18n="skill1">Resolución de problemas</li>
+                    <li data-i18n="skill2">Trabajo en equipo</li>
+                    <li data-i18n="skill3">Comunicación</li>
+                    <li data-i18n="skill4">Aprendizaje continuo</li>
                 </ul>
             </div>
+
             <div class="about-image">
                 <img src="images/Avatar.png" alt="Foto de perfil" class="avatar">
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects" class="section">
-        <h2>Proyectos</h2>
+        <h2 data-i18n="projectsTitle">Proyectos</h2>
+
         <div class="projects-grid">
+
             <div class="project-card">
-                <h3>Análisis con ML</h3>
-                <p>Predicción usando regresión. Tecnologías: Python, Pandas, Scikit-learn.</p>
-                <a href="https://github.com/tuusuario/proyecto1" class="btn">GitHub</a>
+                <h3 data-i18n="proj1Title">Análisis de clientes con clustering.</h3>
+                <p data-i18n="proj1Desc1">Técnicas: exploración, visualización, segmentación K-Means.</p>
+                <p data-i18n="proj1Desc2">Tecnologías: Python, Pandas, Seaborn, Scikit-learn.</p>
+                <a href="mini-proyectos-visual/mini-proyecto_1/index.html" class="btn" data-i18n="viewProject">Ver proyecto</a>
             </div>
+
             <div class="project-card">
-                <h3>Dashboard en Power BI</h3>
-                <p>Visualización de KPIs. Tecnologías: Power BI, SQL.</p>
-                <a href="https://github.com/tuusuario/proyecto2" class="btn">GitHub</a>
+                <h3 data-i18n="proj2Title">Dashboard en Power BI</h3>
+                <p data-i18n="proj2Desc">Visualización de KPIs.</p>
+                <button class="btn btn-popup" data-i18n="viewProject">Ver proyecto</button>
             </div>
+
             <div class="project-card">
-                <h3>Pipeline </h3>
-                <p>ETL para big data.</p>
-                <a href="https://github.com/tuusuario/proyecto3" class="btn">GitHub</a>
+                <h3 data-i18n="proj3Title">Pipeline</h3>
+                <p data-i18n="proj3Desc">ETL para big data.</p>
+                <button class="btn btn-popup" data-i18n="viewProject">Ver proyecto</button>
             </div>
-         <!--   <div class="project-card">
-                <h3>Modelo de Recomendación</h3>
-                <p>Sistema colaborativo. Tecnologías: TensorFlow, Python.</p>
-                <a href="https://github.com/tuusuario/proyecto4" class="btn">GitHub</a>
-            </div>-->
+
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" class="section">
-        <h2>Contacto</h2>
+        <h2 data-i18n="contactTitle">Contacto</h2>
         <form id="contact-form" action="https://formspree.io/f/xrboabzd" method="POST">
-            <input type="text" name="name" placeholder="Nombre" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Mensaje" required></textarea>
-            <button type="submit" class="btn">Enviar</button>
+            <input type="text" name="name" placeholder="Nombre" required data-i18n-placeholder="inputName">
+            <input type="email" name="email" placeholder="Email" required data-i18n-placeholder="inputEmail">
+            <textarea name="message" placeholder="Mensaje" required data-i18n-placeholder="inputMessage"></textarea>
+            <button type="submit" class="btn" data-i18n="sendBtn">Enviar</button>
         </form>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/katherine-gatica-sb/">LinkedIn</a>
-            <a href="https://github.com/Katherine-Gatica-BS">GitHub</a>
+            <a href="https://www.linkedin.com/in/katherine-gatica-sb/" data-i18n="linkedin">LinkedIn</a>
+            <a href="https://github.com/Katherine-Gatica-BS" data-i18n="github">GitHub</a>
         </div>
     </section>
 
 </div>
+
+<!-- Footer -->
+<footer class="mp-footer">
+    <p class="mp-footer-text" data-i18n="footerText">Creado por Katherine Gatica — 2025</p>
+</footer>
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Proyecto 1 — Katherine Gatica</title>
+
+  <!-- hoja de estilos (luego pega styles.css) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light">
+
+  <!-- partículas (fondo) -->
+  <div id="particles-js" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="mp-header">
+    <a class="mp-back" href="../../index.html" aria-label="Volver al portafolio">← Volver</a>
+
+    <div class="top-controls">
+      <button id="themeBtn" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+
+      <select id="language-select" class="lang-select" aria-label="Seleccionar idioma">
+        <option value="es" selected>ES</option>
+        <option value="en">EN</option>
+        <option value="de">DE</option>
+        <option value="pt">PT</option>
+      </select>
+    </div>
+
+    <div class="header-content">
+      <h1 class="mp-title">Mini Proyecto 1</h1>
+      <p class="mp-sub">Análisis de Comportamiento del Cliente</p>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="mp-main">
+
+    <!-- DESCRIPCIÓN -->
+    <section class="mp-section">
+      <h2>Descripción general</h2>
+      <p class="mp-descripcion">
+        Este proyecto consiste en un análisis exploratorio de datos enfocado en comprender el comportamiento de los clientes,
+        sus patrones de compra y los factores que influyen en su valor dentro de la empresa. A través de procesos de limpieza,
+        visualización y segmentación mediante técnicas de clustering, se identifican distintos perfiles de clientes, destacando
+        aquellos con mayor potencial para estrategias de marketing, retención y crecimiento.
+      </p>
+    </section>
+
+    <!-- CARRUSEL -->
+    <section class="mp-section">
+      <h2>Resultados visuales</h2>
+
+      <div class="carousel" aria-roledescription="carousel">
+        <button class="carousel-btn prev" aria-label="Anterior slide">❮</button>
+
+        <div class="carousel-viewport">
+          <div class="carousel-track" role="list">
+            <figure class="carousel-item" role="listitem">
+              <img src="../../images/g1.png" alt="Gráfico 1 — descripción breve">
+              <figcaption class="carousel-caption">Gráfico 1 — resumen/nota</figcaption>
+            </figure>
+
+            <figure class="carousel-item" role="listitem">
+              <img src="../../images/g2.png" alt="Gráfico 2 — descripción breve">
+              <figcaption class="carousel-caption">Gráfico 2 — resumen/nota</figcaption>
+            </figure>
+
+            <figure class="carousel-item" role="listitem">
+              <img src="../../images/g3.png" alt="Gráfico 3 — descripción breve">
+              <figcaption class="carousel-caption">Gráfico 3 — resumen/nota</figcaption>
+            </figure>
+
+            <figure class="carousel-item" role="listitem">
+              <img src="../../images/g4.png" alt="Gráfico 4 — descripción breve">
+              <figcaption class="carousel-caption">Gráfico 4 — resumen/nota</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <button class="carousel-btn next" aria-label="Siguiente slide">❯</button>
+
+        <!-- indicadores (se llenan por JS) -->
+        <div class="carousel-indicators" aria-hidden="false"></div>
+      </div>
+    </section>
+
+    <!-- NOTEBOOK -->
+    <section class="mp-section">
+      <h2>Explora mis Proyectos</h2>
+      <a class="mp-btn" href="https://github.com/Katherine-Gatica-BS/Portafolio" target="_blank" rel="noopener">Explora mis Proyectos</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="mp-footer">
+    <p class="mp-footer-text">Creado por Katherine Gatica — 2025</p>
+  </footer>
+
+  <!-- scripts: particles.js CDN + tu script local -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

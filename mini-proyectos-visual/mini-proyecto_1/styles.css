@@ -1,0 +1,282 @@
+/* ------------------------- */
+/* RESET + BASE */
+/* ------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.4s ease, color 0.4s ease;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  /* ------------------------- */
+  /* VARIABLES DE TEMA */
+  /* ------------------------- */
+  body.light {
+    --bg: #e8e8ec;
+    --text: #222;
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --accent: #a87fd1;
+    --btn-bg: #a87fd1;
+    --btn-text: #fff;
+    --carousel-bg: rgba(255, 255, 255, 0.6);
+  }
+  
+  body.dark {
+    --bg: #121212;
+    --text: #f0f0f0;
+    --card-bg: rgba(18, 18, 18, 0.7);
+    --accent: #bb86fc;
+    --btn-bg: #bb86fc;
+    --btn-text: #121212;
+    --carousel-bg: rgba(30, 30, 30, 0.75);
+  }
+  
+  /* ------------------------- */
+  /* PARTICULAS */
+  /* ------------------------- */
+  #particles-js {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+  }
+  
+  /* ------------------------- */
+  /* HEADER */
+  /* ------------------------- */
+  .mp-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    position: relative;
+  }
+  
+  .mp-back {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+  }
+  
+  .top-controls {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* ------------------------- */
+  /* BOTONES DE CONTROLES */
+  /* ------------------------- */
+  .theme-toggle {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .theme-toggle:hover {
+    opacity: 0.8;
+  }
+  
+  .lang-select {
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  .lang-select:hover {
+    opacity: 0.8;
+  }
+  
+  /* ------------------------- */
+  /* TITULOS */
+  /* ------------------------- */
+  .mp-title {
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .mp-sub {
+    margin-top: 5px;
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  
+  /* ------------------------- */
+  /* SECCIONES */
+  /* ------------------------- */
+  .mp-section {
+    padding: 30px 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .mp-section h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+  
+  .mp-descripcion {
+    background: var(--card-bg);
+    padding: 18px 22px;
+    border-radius: 12px;
+    font-size: 17px;
+    text-align: justify;
+    color: var(--text);
+  }
+  
+  /* ------------------------- */
+  /* CARRUSEL */
+  /* ------------------------- */
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .carousel-viewport {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 14px;
+    background: var(--carousel-bg);
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .carousel-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.85;
+  }
+  
+  /* botones carrusel */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    font-size: 26px;
+    padding: 8px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.85;
+  }
+  
+  .carousel-btn:hover {
+    opacity: 1;
+  }
+  
+  .carousel-btn.prev {
+    left: -10px;
+  }
+  
+  .carousel-btn.next {
+    right: -10px;
+  }
+  
+  /* indicadores */
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 15px;
+  }
+  
+  .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    background: var(--btn-bg);
+    opacity: 0.4;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .carousel-indicators button.active {
+    opacity: 1;
+  }
+  
+  /* ------------------------- */
+  /* FOOTER */
+  /* ------------------------- */
+  .mp-footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .mp-footer-text {
+    font-size: 15px;
+    opacity: 0.7;
+  }
+  
+  /* ------------------------- */
+  /* RESPONSIVE */
+  /* ------------------------- */
+  @media (max-width: 700px) {
+    .mp-title {
+      font-size: 30px;
+    }
+  
+    .carousel-item img {
+      max-height: 350px;
+    }
+  
+    .carousel-btn.prev {
+      left: 5px;
+    }
+  
+    .carousel-btn.next {
+      right: 5px;
+    }
+  }
+  
